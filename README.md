@@ -295,4 +295,4 @@ body {
 
 ## Result
 
-[RESULTADO]([https://choosealicense.com/licenses/mit/](https://github.com/UP210752/Programacion-Web-210752/blob/main/Twitter/result.JPG)https://github.com/UP210752/Programacion-Web-210752/blob/main/Twitter/result.JPG)
+[RESULTADO](https://github.com/UP210752/Programacion-Web-210752/blob/main/Twitter/result.JPG)
