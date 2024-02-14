@@ -1,0 +1,186 @@
+﻿:root {
+    --primary-color-grey: #6E7886;
+    --primary-color-grey-50: rgba(110, 120, 134, 0.1);
+    --color-icon-comentario: rgb(29,161,242);
+    --color-icon-comentario-50: rgba(29,161,242,0.4);
+    --color-icon-retwit: rgba(24,176,95);
+    --color-icon-retwit-50: rgba(24,176,95,0.5);
+    --color-icon-like: rgba(224,36,94);
+    --color-icon-like-50: rgba(224,36,94,0.5);
+    --color-icon-share: rgba(30,148,221);
+    --color-icon-share-50: rgba(30,148,221, 0.5);
+}
+
+* {
+    background-color: #15202B;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: rgb(29, 161, 242);
+    text-decoration: none;
+}
+
+.textGrey {
+    color: var(--primary-color-grey);
+}
+
+.container {
+    border: solid var(--primary-color-grey) 1px;
+    border-color: transparent transparent var(--primary-color-grey) transparent;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 650px;
+    height: 400px;
+}
+
+    .container * {
+        background-color: transparent;
+    }
+
+.twitt-body {
+    grid-column: 1/13;
+    grid-row: 1/11;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+
+.twitt-icons {
+    grid-column: 1/13;
+    grid-row: 12/13;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+img, svg {
+    max-width: 100%;
+    max-height: auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .icon svg {
+        width: 50%;
+        padding: 5px;
+        margin-right: 5px;
+        fill: var(--primary-color-grey);
+    }
+
+    .icon span {
+        font-size: small;
+        color: var(--primary-color-grey);
+    }
+
+.twit-avatar > img {
+    border-radius: 50%;
+    margin: 10px;
+    width: 75%;
+}
+
+.twitt-body p {
+    padding: 10px 0px
+}
+
+.twitt-body img {
+    border-radius: 30px;
+}
+
+.twitt-content img {
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--primary-color-grey);
+    width: 85%;
+}
+
+.container:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-grey-50);
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+
+
+.twitt-icons .icon:nth-child(1):hover svg {
+    border-radius: 50%;
+    background-color: var(--color-icon-comentario-50);
+    fill: var(--color-icon-comentario);
+    transition-duration: 0.5s;
+}
+
+.twitt-icons .icon:nth-child(1):hover span {
+    color: var(--color-icon-comentario);
+}
+
+.twitt-icons .icon:nth-child(1):hover span,
+.twitt-icons .icon:nth-child(1):hover svg {
+    transition-duration: 0.5s;
+}
+
+.twitt-icons .icon:nth-child(2):hover svg {
+    border-radius: 50%;
+    background-color: var(--color-icon-retwit-50);
+    fill: var(--color-icon-retwit);
+    transition-duration: 0.5s;
+}
+
+.twitt-icons .icon:nth-child(2):hover span {
+    color: var(--color-icon-retwit);
+}
+
+.twitt-icons .icon:nth-child(2):hover span,
+.twitt-icons .icon:nth-child(2):hover svg {
+    transition-duration: 0.5s;
+}
+
+.twitt-icons .icon:nth-child(3):hover svg {
+    border-radius: 50%;
+    background-color: var(--color-icon-like-50);
+    fill: var(--color-icon-like);
+    transition-duration: 0.5s;
+}
+
+.twitt-icons .icon:nth-child(3):hover span {
+    color: var(--color-icon-like);
+}
+
+.twitt-icons .icon:nth-child(3):hover span,
+.twitt-icons .icon:nth-child(3):hover svg {
+    transition-duration: 0.5s;
+}
+
+.twitt-icons .icon:nth-child(4):hover svg {
+    border-radius: 50%;
+    background-color: var(--color-icon-share-50);
+    fill: var(--color-icon-share);
+    transition-duration: 0.5s;
+}
+
+.twitt-icons .icon:nth-child(4):hover span {
+    color: var(--color-icon-share);
+}
+
+.twitt-icons .icon:nth-child(4):hover span,
+.twitt-icons .icon:nth-child(4):hover svg {
+    transition-duration: 0.5s;
+}
