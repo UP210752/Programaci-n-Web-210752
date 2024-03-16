@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="userselects">
+            <select id="select-users">
+                <option value="1">Micaela</option>
+                <option value="2">Ester</option>
+                <option value="3">Mercedes</option>
+                <option value="4">Francisco</option>
+                <option value="5">Elsa</option>
+                <option value="6">Agustín</option>
+                <option value="7">Mario</option>
+                <option value="8">Matías</option>
+                <option value="9">Irene</option>
+                <option value="10">Kevin</option>
+            </select>
+        </section>
+        <section class="user-container" id="user-container">
+            <div>
+                <h3>Informacion del usuario seleccionado</h3>
+                <ul>
+                    <li>Nombre completo: <span id="name">Rogelio Trejo Estrada</span></li>
+                    <li>Email: <span id="mail">rogelio.trejo@upa.edu.mx</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="task-container" id="task-container">
+            <h3>Lista de tareas del usuario</h3>
+            <ul>
+                <li>
+                    <span>Nombre de la tarea</span>
+                    <input type="checkbox" checked>
+                </li>
+            </ul>
+            <button id="btn_tareas">Mostrar tareas del usuario</button>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
